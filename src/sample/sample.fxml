@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <TitledPane animated="false" prefHeight="507.0" prefWidth="561.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="serializeButton" mnemonicParsing="false" onAction="#serialize" prefHeight="25.0" prefWidth="72.0" text="Serialize" />
+                        <Button fx:id="deserializeButton" mnemonicParsing="false" onAction="#deserialize" text="Deserialize" />
+                     </children>
+                  </VBox>
+                  <TextArea fx:id="textarea1" layoutX="78.0" layoutY="-1.0" prefHeight="455.0" prefWidth="481.0" />
+               </children>
+            </AnchorPane>
+        </content>
+         <graphic>
+            <MenuBar prefHeight="45.0" prefWidth="528.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Street">
+                  <items>
+                    <MenuItem fx:id="breakdance" mnemonicParsing="false" onAction="#chooseBreakdance" text="Breakdance" />
+                        <MenuItem fx:id="hiphop" mnemonicParsing="false" onAction="#chooseHiphop" text="Hip-hop" />
+                        <MenuItem fx:id="jive" mnemonicParsing="false" onAction="#chooseJive" text="Jive" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Latin">
+                    <items>
+                      <MenuItem fx:id="Rumba" mnemonicParsing="false" onAction="#chooseRumba" text="Rumba" />
+                        <MenuItem fx:id="tango" mnemonicParsing="false" onAction="#chooseTango" text="Tango" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Ballroom">
+                    <items>
+                        <MenuItem fx:id="modern" mnemonicParsing="false" onAction="#chooseModern" text="Modern" />
+                      <MenuItem fx:id="romantic" mnemonicParsing="false" onAction="#chooseRomantic" text="Romantic" />
+                        <MenuItem fx:id="classic" mnemonicParsing="false" onAction="#chooseClassic" text="Classic" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Club">
+                    <items>
+                      <MenuItem fx:id="electro" mnemonicParsing="false" onAction="#chooseElectro" text="Electro" />
+                        <MenuItem fx:id="house" mnemonicParsing="false" onAction="#chooseHouse" text="House" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Easy">
+                    <items>
+                      <MenuItem fx:id="contemp" mnemonicParsing="false" onAction="#chooseContemp" text="Contemp" />
+                        <MenuItem fx:id="gogo" mnemonicParsing="false" onAction="#chooseGogo" text="Go-go" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Folk">
+                    <items>
+                      <MenuItem fx:id="lezginka" mnemonicParsing="false" onAction="#chooseLezginka" text="Lezginka" />
+                        <MenuItem fx:id="roundelay" mnemonicParsing="false" onAction="#chooseRoundelay" text="Roundelay" />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </graphic>
+      </TitledPane>
+   </children>
+</GridPane>
