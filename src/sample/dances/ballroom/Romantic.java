@@ -12,4 +12,8 @@ public class Romantic extends Dance {
         this.dynamics = "high";
         this.figure = "free";
     }
+
+    public String getName(){
+        return "romantic";
+    }
 }

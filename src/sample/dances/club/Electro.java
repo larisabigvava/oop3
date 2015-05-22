@@ -12,4 +12,8 @@ public class Electro extends Dance{
         this.dynamics = "low";
         this.figure = "free";
     }
+
+    public String getName(){
+        return "electro";
+    }
 }

@@ -10,7 +10,5 @@ public abstract class Dance implements Serializable{
     public String figure;
     public String dynamics;
     public String composition;
-    public String getName(){
-        return "name";
-    }
+    public abstract String getName();
 }

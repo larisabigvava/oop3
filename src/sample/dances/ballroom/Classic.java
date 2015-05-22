@@ -12,4 +12,8 @@ public class Classic extends Dance {
         this.dynamics = "high";
         this.figure = "certain";
     }
+
+    public String getName(){
+        return "classic";
+    }
 }
